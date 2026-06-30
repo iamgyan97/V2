@@ -29,6 +29,9 @@ nav .logo {
     font-size: 20px;
     color: var(--deep-blue);
 }
+nav .logo img {
+    height: 50px;
+}
 
 nav .nav-links {
     display: flex;

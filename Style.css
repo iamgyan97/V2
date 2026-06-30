@@ -1,19 +1,67 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f9fc;
+/* ===== Brand Colors (Variables) ===== */
+:root {
+    --deep-blue: #0B3C5D;
+    --emerald-green: #1E8449;
+    --saffron: #FF9933;
+    --background: #FFFFFF;
+    --text-dark: #333333;
 }
 
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: var(--background);
+    border-bottom: 1px solid #eee;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--deep-blue);
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+nav .nav-links a:hover {
+    color: var(--saffron);
+}
+
+/* ===== Hero Section ===== */
 header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, #0B3C5D, #1E88E5);
+    background: linear-gradient(135deg, var(--deep-blue), var(--emerald-green));
     color: white;
 }
 
 h1 {
     font-size: 52px;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 p {
@@ -26,15 +74,16 @@ button {
     border: none;
     border-radius: 30px;
     font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 button:first-of-type {
-    background: #FF9933;
+    background: var(--saffron);
     color: white;
 }
 
 button:last-of-type {
     background: white;
-    color: #0B3C5D;
+    color: var(--deep-blue);
 }

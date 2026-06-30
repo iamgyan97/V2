@@ -141,6 +141,11 @@ h1 {
 
 p {
     font-size: 20px;
+    .tagline-sub {
+    font-size: 16px;
+    opacity: 0.85;
+    font-style: italic;
+}
 }
 
 button {

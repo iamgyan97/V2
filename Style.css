@@ -98,6 +98,45 @@ header::before {
     background: radial-gradient(circle, rgba(255,153,51,0.35) 0%, rgba(255,153,51,0) 70%);
     pointer-events: none;
 }
+/* ===== Mobile Adjustments ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 60px 20px 60px;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px 20px;
+    }
+
+    nav .logo img {
+        height: 70px;
+    }
+
+    nav .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .home-section {
+        padding: 40px 20px;
+    }
+
+    .page-section {
+        margin: 40px auto;
+    }
+}
 
 header h1, header p {
     position: relative;
